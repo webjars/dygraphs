@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>dygraphs</artifactId>
-    <version>1.0.1-1-SNAPSHOT</version>
+    <version>1.0.1-1</version>
     <name>Dygraphs</name>
     <description>WebJar for Dygraphs</description>
     <url>http://webjars.org</url>
@@ -43,7 +43,7 @@
         <url>http://github.com/webjars/dygraphs</url>
         <connection>scm:git:https://github.com/webjars/dygraphs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/dygraphs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>dygraphs-1.0.1-1</tag>
     </scm>
     
     
@@ -100,7 +100,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/dygraphs-${upstream.version}" includes="dygraph-*.js" excludes="dygraph-combined.js"/>
+                                    <fileset dir="${project.build.directory}/dygraphs-${upstream.version}" includes="dygraph-*.js" excludes="dygraph-combined.js" />
                                 </move>
                             </target>
                         </configuration>
